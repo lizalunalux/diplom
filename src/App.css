@@ -1,0 +1,9 @@
+body{
+  margin: 0;
+  font-family: "Lato", serif;
+}
+
+.app{
+  display: flex;
+  justify-content: space-around;
+}

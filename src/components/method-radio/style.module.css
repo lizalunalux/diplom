@@ -1,0 +1,25 @@
+.wrap{
+    display: flex;
+    padding: 20px 0;
+}
+
+.label{
+    font-family: Lato, serif;
+    display: block;
+    border: 1px solid #3492bb;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    box-shadow: 0 0 3px 0 #cecece;
+}
+
+.input{
+    display: none;
+}
+
+.input:checked + .label{
+    background-color: #3492bb;
+    color: #fff;
+}
+
