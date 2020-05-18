@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/diplom/static/css/main.88b355f9.chunk.css",
+    "main.js": "/diplom/static/js/main.ba0dd2b7.chunk.js",
+    "main.js.map": "/diplom/static/js/main.ba0dd2b7.chunk.js.map",
+    "runtime-main.js": "/diplom/static/js/runtime-main.a4e94be4.js",
+    "runtime-main.js.map": "/diplom/static/js/runtime-main.a4e94be4.js.map",
+    "static/js/2.7a573abd.chunk.js": "/diplom/static/js/2.7a573abd.chunk.js",
+    "static/js/2.7a573abd.chunk.js.map": "/diplom/static/js/2.7a573abd.chunk.js.map",
+    "index.html": "/diplom/index.html",
+    "precache-manifest.f46fddf4b97f5a8c1ef83a78662e4d09.js": "/diplom/precache-manifest.f46fddf4b97f5a8c1ef83a78662e4d09.js",
+    "service-worker.js": "/diplom/service-worker.js",
+    "static/css/main.88b355f9.chunk.css.map": "/diplom/static/css/main.88b355f9.chunk.css.map",
+    "static/js/2.7a573abd.chunk.js.LICENSE.txt": "/diplom/static/js/2.7a573abd.chunk.js.LICENSE.txt",
+    "static/media/style.module.css": "/diplom/static/media/bg.af7185c1.jpg",
+    "static/media/branding.svg": "/diplom/static/media/branding.96be13b9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4e94be4.js",
+    "static/js/2.7a573abd.chunk.js",
+    "static/css/main.88b355f9.chunk.css",
+    "static/js/main.ba0dd2b7.chunk.js"
+  ]
+}
