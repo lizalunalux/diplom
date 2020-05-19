@@ -8,6 +8,16 @@ export default function (state = app, action) {
         ...state,
         colorMethod: action.payload,
       };
+    case CNST.SET_SVG_PATHS.SUCCESS:
+      return {
+        ...state,
+        svgPaths: action.payload,
+      };
+    case CNST.SET_COLORS_TO_SET.SUCCESS:
+      return {
+        ...state,
+        colorsToSet: action.payload,
+      };
     default:
       return state;
   }
