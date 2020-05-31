@@ -2,6 +2,7 @@ import React, {useCallback, useEffect, useState} from "react";
 import styles from "./style.module.css"
 import * as tinycolor from "tinycolor2"
 
+let ticking = false;
 
 export const Wheel = ({colorMethod, picker, setColorsToSet}) => {
     const [combinations, setCombinations] = useState(tinycolor("#f00").triad());
@@ -14,7 +15,14 @@ export const Wheel = ({colorMethod, picker, setColorsToSet}) => {
     };
 
     const handleColorChange = useCallback((color) => {
-        updateColors(color.hexString);
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                updateColors(color.hexString);
+                ticking = false;
+            });
+            ticking = true;
+        }
+
     }, [colorMethod]);
 
     useEffect(() => { //setting up picker on mount
@@ -31,15 +39,24 @@ export const Wheel = ({colorMethod, picker, setColorsToSet}) => {
         <div className={styles.wrap}>
             <div id="picker"/>
             <div className={styles.combinations}>
-                <div style={{
-                    backgroundColor: combinations[0]
-                }}/>
-                <div style={{
-                    backgroundColor: combinations[1]
-                }}/>
+                <div style={{backgroundColor: combinations[0]}}>
+                   <span>
+                       {combinations[0].toString()}
+                   </span>
+                </div>
+                <div style={{backgroundColor: combinations[1]}}>
+                    <span>
+                    {combinations[1].toString()}
+                    </span>
+
+                </div>
                 <div style={{
                     backgroundColor: combinations[2]
-                }}/>
+                }}>
+                    <span>
+                         {combinations[2].toString()}
+                    </span>
+                </div>
 
             </div>
         </div>

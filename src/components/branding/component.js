@@ -16,7 +16,6 @@ export const getColorArray = (path, color) => {
 export const Branding = ({svgPaths, colorsToSet}) => {
 
     useEffect(() => {
-        console.log(svgPaths);
         if (svgPaths !== undefined)
             Object.values(svgPaths).map((colorArr, ind) => colorArr.forEach(color => color.style.fill = colorsToSet[ind]));
 

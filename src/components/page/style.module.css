@@ -2,8 +2,13 @@ body {
     font-family: "Lato", serif;
 }
 
-h1, h2{
+h1, h2 {
     margin: 0;
+}
+
+.wrap {
+    height: 90vh;
+    margin-left: 10%;
 }
 
 .container {
@@ -18,10 +23,9 @@ h1, h2{
     background-color: #191919;
     color: #cecece;
     padding: 10px 10%;
-    box-shadow: 0 2px 8px #7b7b7b;
 }
 
-.logo{
+.logo {
     margin: 0;
 }
 
@@ -37,21 +41,22 @@ h1, h2{
     font-weight: bold;
 }
 
-.nav li:hover{
+.nav li:hover {
     color: white;
 }
 
-.bg{
+.bg {
     background-image: url("../../img/bg.jpg");
     background-position: center;
-    padding: 200px 0;
-    box-shadow:inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+    padding: 100px 0 250px;
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+    position: relative;
 }
 
-.button{
+.button {
     border: none;
     background-color: #eaeaea;
-    color: #6e6e6e;
+    color: #fff;
     font-family: Lato, serif;
     font-weight: 400;
     padding: 15px 40px;
@@ -60,14 +65,73 @@ h1, h2{
     margin-right: 10px;
 }
 
-.headline{
+.button:before {
+    content: attr(data-content);
+    mix-blend-mode: difference;
+}
+
+.headline {
     font-size: 40px;
     color: #ffffff;
     line-height: 1.25;
 }
 
-.subHeadline{
+.subHeadline {
     font-size: 22px;
     font-weight: 300;
     margin: 0 0 40px;
+}
+
+.boxWrap {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.box {
+    width: 30%;
+    height: 320px;
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 0 5px 2px rgba(206, 206, 206, 0.34);
+}
+
+.box .button{
+   margin-top: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.boxTitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boxIconWrap{
+    /*background-color: #fff;*/
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.boxIcon {
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.boxText{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }

@@ -1,16 +1,26 @@
 .wrap{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .combinations{
+    margin-top: 20px;
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .combinations div{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     margin-right: 20px;
     border-radius: 50%;
+    position: relative;
+}
+
+.combinations span{
+    position: absolute;
+    top: 80px;
+    left: 7px;
 }

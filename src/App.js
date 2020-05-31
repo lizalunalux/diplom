@@ -3,10 +3,11 @@ import './App.css';
 import Wheel from "./components/wheel";
 import Branding from "./components/branding";
 import {getColorArray} from "./components/branding/component";
-import {Page} from "./components/page/component";
+import Page from "./components/page";
 import MethodRadio from "./components/method-radio";
 import {setSvgPathsAction} from "./redux/actions/app";
 import store from "./redux/createStore";
+import Slider from 'infinite-react-carousel';
 
 window.addEventListener("load", () => {
     const obj = document.getElementById("brandingObj");
@@ -20,19 +21,21 @@ window.addEventListener("load", () => {
 
 
 function App() {
-
-
     return (
         <div>
             <div className="app">
-                <Branding/>
+
                 <div>
                     <MethodRadio/>
                     <Wheel/>
                 </div>
+                <Slider  dots arrows={false} className="slider" >
 
+                    <Page/>
+                    <Branding/>
+                </Slider>
             </div>
-            <Page/>
+
         </div>
 
     );
