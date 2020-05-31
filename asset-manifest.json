@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/diplom/static/css/main.88b355f9.chunk.css",
-    "main.js": "/diplom/static/js/main.ddd45d46.chunk.js",
-    "main.js.map": "/diplom/static/js/main.ddd45d46.chunk.js.map",
+    "main.css": "/diplom/static/css/main.9551f564.chunk.css",
+    "main.js": "/diplom/static/js/main.cdbdbc3c.chunk.js",
+    "main.js.map": "/diplom/static/js/main.cdbdbc3c.chunk.js.map",
     "runtime-main.js": "/diplom/static/js/runtime-main.a4e94be4.js",
     "runtime-main.js.map": "/diplom/static/js/runtime-main.a4e94be4.js.map",
-    "static/js/2.109d22b4.chunk.js": "/diplom/static/js/2.109d22b4.chunk.js",
-    "static/js/2.109d22b4.chunk.js.map": "/diplom/static/js/2.109d22b4.chunk.js.map",
+    "static/css/2.05a0ae32.chunk.css": "/diplom/static/css/2.05a0ae32.chunk.css",
+    "static/js/2.39c75b59.chunk.js": "/diplom/static/js/2.39c75b59.chunk.js",
+    "static/js/2.39c75b59.chunk.js.map": "/diplom/static/js/2.39c75b59.chunk.js.map",
     "index.html": "/diplom/index.html",
-    "precache-manifest.fe5373d16978be4be4efc0f398f15c1d.js": "/diplom/precache-manifest.fe5373d16978be4be4efc0f398f15c1d.js",
+    "precache-manifest.f5dcb401b957881a22603c7468954458.js": "/diplom/precache-manifest.f5dcb401b957881a22603c7468954458.js",
     "service-worker.js": "/diplom/service-worker.js",
-    "static/css/main.88b355f9.chunk.css.map": "/diplom/static/css/main.88b355f9.chunk.css.map",
-    "static/js/2.109d22b4.chunk.js.LICENSE.txt": "/diplom/static/js/2.109d22b4.chunk.js.LICENSE.txt",
+    "static/css/2.05a0ae32.chunk.css.map": "/diplom/static/css/2.05a0ae32.chunk.css.map",
+    "static/css/main.9551f564.chunk.css.map": "/diplom/static/css/main.9551f564.chunk.css.map",
+    "static/js/2.39c75b59.chunk.js.LICENSE.txt": "/diplom/static/js/2.39c75b59.chunk.js.LICENSE.txt",
     "static/media/style.module.css": "/diplom/static/media/bg.af7185c1.jpg",
-    "static/media/branding.svg": "/diplom/static/media/branding.96be13b9.svg"
+    "static/media/branding.svg": "/diplom/static/media/branding.b60d1716.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a4e94be4.js",
-    "static/js/2.109d22b4.chunk.js",
-    "static/css/main.88b355f9.chunk.css",
-    "static/js/main.ddd45d46.chunk.js"
+    "static/css/2.05a0ae32.chunk.css",
+    "static/js/2.39c75b59.chunk.js",
+    "static/css/main.9551f564.chunk.css",
+    "static/js/main.cdbdbc3c.chunk.js"
   ]
 }
