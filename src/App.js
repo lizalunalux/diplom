@@ -2,12 +2,21 @@ import React from 'react';
 import './App.css';
 import Wheel from "./components/wheel";
 import Branding from "./components/branding";
-import {getColorArray} from "./components/branding/component";
 import Page from "./components/page";
 import MethodRadio from "./components/method-radio";
 import {setSvgPathsAction} from "./redux/actions/app";
 import store from "./redux/createStore";
 import Slider from 'infinite-react-carousel';
+
+export const getColorArray = (path, color) => {
+    path = [...path];
+    const colorString = "fill:" + color;
+    return path.filter(path => {
+        if (path.attributes.style !== undefined) {
+            return path.attributes.style.textContent.includes(colorString);
+        }
+    });
+};
 
 window.addEventListener("load", () => {
     const obj = document.getElementById("brandingObj");
@@ -24,20 +33,16 @@ function App() {
     return (
         <div>
             <div className="app">
-
                 <div>
                     <MethodRadio/>
                     <Wheel/>
                 </div>
-                <Slider  dots arrows={false} className="slider" >
-
+                <Slider dots arrows={false} className="slider">
                     <Page/>
                     <Branding/>
                 </Slider>
             </div>
-
         </div>
-
     );
 }
 
